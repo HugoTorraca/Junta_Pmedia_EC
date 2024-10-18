@@ -34,6 +34,10 @@ planilha[nrow(planilha),3]<--64.66
 planilha[nrow(planilha)+1,1]<-"Pimental_tot"
 planilha[nrow(planilha),2]<--03.13
 planilha[nrow(planilha),3]<--51.77
+
+planilha[nrow(planilha)+1,1]<-"Amaru_tot"
+planilha[nrow(planilha),2]<--12.60
+planilha[nrow(planilha),3]<--69.12
 #--------------------------Le Pmedia-------------------------------------------------
 PMEDIA<-NULL
 PMEDIA<-matrix(0,ncol=14,nrow=nrow(planilha))
