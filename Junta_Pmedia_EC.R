@@ -61,7 +61,7 @@ for ( i in 1:10){
   lon_lat<- paste0(arq_ecmwf[,1],"_",arq_ecmwf[,2])
   for ( j in 1 : nrow(planilha)){
     l_l<-paste0(planilha$Longitude[j],"_",planilha$Latitude[j])
-    linha<-which(lon_lat==l_l)[1]
+    linha<-tail(which(lon_lat==l_l),1)
     ec[j,1:45]<-as.numeric(arq_ecmwf[linha,3:47])
   }
   ECMWF[[i]]<-ec
